@@ -126,8 +126,11 @@ article .skills-content:hover {
 article .skills-content:hover .skills-title {
   letter-spacing: 0.9rem;
 }
+article .skills-content:hover {
+  background-color: #531313;
+}
 article .skills-content:hover .skills-description {
-  color: #0000002a;
+  /* color: #0000002a; */
   color: #fff;
 }
 /* * End artecal section */
@@ -274,8 +277,7 @@ button[type="submit"] {
 /* *start testImonals   --> */
 .slider {
   opacity: 0.4;
-    animation:slider 1.5s forwards alternate;
-
+  animation: slider 1.5s forwards alternate;
 }
 .dot {
   background-color: gray;
