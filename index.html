@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="prand coffee">
+    <meta name="keywords" content="coffee">
+    <meta name="author" content="Ahmed Albehy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="images/svg/coffee.svg" type="image/icon type">
+    <link rel="stylesheet" href="CSS\style.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <title>Princess Coffee </title>
+</head>
+<body>
+    <main>
+        <!-- *Start nave pare -->
+        <!-- Include this script tag or install `@tailwindplus/elements` via npm:-->
+        <nav id="navpare"
+            class="nav  fixed after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px ">
+            <div class="x mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+                    <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                        <!-- Mobile menu button-->
+                        <button type="button" command="--toggle" commandfor="mobile-menu"
+                            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                            <span class="absolute -inset-0.5"></span>
+                            <span class="sr-only">Open main menu</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- nav Links At Lg Screen -->
+                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end ">
+                        <div class="hidden sm:ml-6 sm:block ">
+                            <div class="flex space-x-4">
+                                <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                                <a href="#" nav-link aria-current="page"
+                                    class="uppercase nav-link rounded-md px-3 py-2  font-medium   text-white"> home</a>
+                                <a href="#about"
+                                    class="uppercase nav-link rounded-md px-3 py-2  font-medium   text-white">
+                                    about us</a>
+
+                                <a href="#discover"
+                                    class="uppercase nav-link rounded-md px-3 py-2  font-medium   text-white">discover</a>
+                                <a href="#contact"
+                                    class="uppercase nav-link rounded-md px-3 py-2  font-medium  text-white">
+                                    contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute inset-y-0 
+                        left-0
+                        flex items-center pr-2 
+                        sm:pr-0">
+                        <!-- Profile dropdown -->
+                        <el-dropdown class="relative ml-3">
+                            <button
+                                class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+                                <span class="absolute -inset-1.5"></span>
+                                <span class="sr-only">Open user menu</span>
+                                <a href="#">
+                                    <img src="images/svg/coffee.svg" alt=""
+                                        class="logo size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+                                </a>
+                            </button>
+                        </el-dropdown>
+                    </div>
+                </div>
+            </div>
+            <!-- nav Links At sm Screen -->
+            <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+                <div class="space-y-1 px-2 pt-2 pb-3">
+                    <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                    <a href="#" aria-current="page"
+                        class="block uppercase nav-link rounded-md  px-3 py-2 text-base font-medium hover:bg-white/5  text-white  ">
+                        home
+                    </a>
+                    <a href="#about"
+                        class="block uppercase nav-link rounded-md px-3 py-2 text-base font-medium  hover:bg-white/5 text-white  ">
+                        about us
+                    </a>
+                    <a href="#discover"
+                        class="block uppercase nav-link rounded-md px-3 py-2 text-base font-medium  hover:bg-white/5 text-white  ">
+                        discover
+                    </a>
+                    <a href="#contact"
+                        class="block uppercase nav-link rounded-md px-3 py-2 text-base font-medium  hover:bg-white/5 text-white  ">
+                        contact us
+                    </a>
+                </div>
+            </el-disclosure>
+        </nav>
+        <!-- *End nave pare -->
+        <!-- *Start Home Section  -->
+        <section id="home">
+            <div class="pb-10 text-center home-container flex flex-col  justify-center items-center">
+                <div class="text-6xl md:text-8xl  mt-50">
+                    <h1 class="home-title mb-10 font-bold text-white">Princess Coffee</h1>
+                    <p class="home-descraption font-medium text-4xl md:text-3xl text-white">Coffee Talks</p>
+                </div>
+                <!-- arrow scrolling -->
+                <div class="mt-30 home-arrow">
+                    <a href="#" class="text-white text-7xl ">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- *End Home Section  -->
+        <!--? Start About area  -->
+        <div class="about-area">
+            <!-- * Start skills section  -->
+            <section class="bg-white">
+                <article class="p-10 ">
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                        <!-- first card skills -->
+                        <div class="skills-content py-10 flex flex-col items-center hover:bg-red-900">
+                            <div class="icon w-15 py-5">
+                                <img src="images/svg/coffee-bag.svg" alt="">
+                            </div>
+                            <div>
+                                <h2
+                                    class="skills-title text-center py-2 tracking-[.70em] font-bold text-red-700  uppercase ">
+                                    made in us
+                                    bold </h2>
+                                <p
+                                    class="skills-description  text-base/8 tracking-wide py-2 px-6 md:px-10 ">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- second card skills -->
+                        <div class="skills-content py-10 flex flex-col items-center hover:bg-red-900">
+                            <div class="icon w-15 py-5">
+                                <img src="images/svg/spa.svg" alt="">
+                            </div>
+                            <div>
+                                <h2
+                                    class="skills-title text-center py-2 tracking-[.70em] font-bold text-red-700  uppercase ">
+                                    relaxation
+                                    bold </h2>
+                                <p
+                                    class="skills-description  text-base/8 tracking-wide py-2 px-6 md:px-10 ">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- third card skills -->
+                        <div class="skills-content py-10 flex flex-col items-center hover:bg-red-900">
+                            <div class="icon w-15 py-5">
+                                <img src="images/svg/ecology-and-environment.svg" alt="">
+                            </div>
+                            <div>
+                                <h2
+                                    class="skills-title text-center py-2 tracking-[.70em] font-bold text-red-700  uppercase ">
+                                    energy
+                                    bold </h2>
+                                <p
+                                    class="skills-description  text-base/8 tracking-wide py-2 px-6 md:px-10 ">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fourth card skills -->
+                        <div
+                            class=" md:col-span-3 lg:col-span-1 skills-content py-10 flex flex-col items-center hover:bg-red-900">
+                            <div class="icon w-15 py-5">
+                                <img src="images/svg/cook.svg" alt="">
+                            </div>
+                            <div>
+                                <h2
+                                    class="skills-title text-center py-2 tracking-[.70em] font-bold text-red-700  uppercase ">
+                                    family recipe
+                                    bold </h2>
+                                <p
+                                    class="skills-description  text-base/8 tracking-wide py-2 px-6 md:px-10 ">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <!-- * End tart  skills section  -->
+
+            <!-- * Start About Section -->
+            <section id="about" class="about bg-white overflow-hidden">
+                <div class="px-20">
+                    <div class="grid md:grid-cols-2   ">
+                        <!-- video -->
+                        <div class="about-content about-content-hidden-video">
+                            <video autoplay loop>
+                                <source src="videos/woman-drinking-coffee.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <!-- text -->
+                        <div class=" about-content about-content-hidden-text p-10">
+                            <div class="about-title">
+                                <h1 class=" uppercase text-red-900 text-3xl font-bold">about</h1>
+                                <h2 class=" uppercase text-3xl font-bold">Princess Coffee's</h2>
+                            </div>
+                            <p class="about-descraption  my-5">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Quaerat illum officia eius iusto laboriosam, dolor
+                            </p>
+                            <p class="about-descraption  my-5">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Quaerat illum officia eius iusto laboriosam, dolor
+                            </p>
+                            <a href="#">
+                                <button
+                                    class="learn-more font-bold uppercase border-2 p-5 border-red-900 hover:bg-red-900 hover:text-white ">
+                                    learn more
+                                </button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- * End About Section -->
+            <!--? End About area  -->
+            <div id="discover" class="section-title flex flex-col justify-center items-center py-5">
+                <h1 class="text-red-900 font-bold text-5xl py-5">
+                    Discover
+                </h1>
+                <h2 class="text-6xl uppercase tracking-[.15em] font-black text-white">
+                    our menu
+                </h2>
+            </div>
+        </div>
+        <!-- ? Start menu area -->
+        <div class="menu-area">
+            <!-- Start  section menu -->
+            <section class="bg-white">
+                <!-- ~ choose menu Button-->
+                <div class="menu-icons grid grid-cols-12 items-center ">
+                    <span class="col-span-5 pt-5 ">
+                        <hr class="line">
+                    </span>
+                    <span id="hot-drink" class="selector col-span-1 ">
+                        <img src="/images/svg/hot-drinks (1).png" alt="">
+                    </span>
+                    <span id="snacks" class="col-span-1 ">
+                        <img src="images/svg/snack.png" alt="">
+                    </span>
+                    <span class="col-span-5 pt-5">
+                        <hr class="line">
+                    </span>
+                </div>
+                <!-- ~ choose menu -->
+                <!-- ~ image && description menu -->
+                <!-- ? Start hot drinks -->
+                <div id="hot-drinks-menu" class=" drinks-menu px-10">
+                    <div class=" grid md:grid-cols-3 lg:grid-cols-4 justify-center items-center">
+                        <!--* //////////////////////// -->
+                        <div class="my-5">
+                            <div class="book">
+                                <h1 class=" uppercase font-bold text-red-900 text-2xl mb-5 break-keep w-25 text-center">
+                                    coffee americano
+                                </h1>
+                                <!-- <h1 class=" uppercase font-bold text-red-900 text-3xl ps-[10px]"></h1> -->
+                                <p class="px-10 text-gray-500 dark:text-gray-500 mt-2 text-sm leading-6 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.
+                                </p>
+                                <h3 class="uppercase font-bold text-red-900 text-2xl mt-5">
+                                    ₹ COST
+                                </h3>
+                                <div class="cover overflow-hidden ">
+                                    <img class="size-75" src="images/Coffee/1.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--* //////////////////////// -->
+                        <div class="my-5">
+                            <div class="book">
+                                <h1 class="uppercase font-bold text-red-900 text-2xl mb-5 break-keep w-25 text-center">
+                                    hot coffee
+
+                                </h1>
+                                <!-- <h1 class=" uppercase font-bold text-red-900 text-3xl ps-[10px]"></h1> -->
+                                <p class="px-10 text-gray-500 dark:text-gray-500 mt-2 text-sm leading-6 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.
+                                </p>
+                                <h3 class="uppercase font-bold text-red-900 text-2xl mt-5">
+                                    ₹ COST
+                                </h3>
+                                <div class="cover overflow-hidden ">
+                                    <img class="size-75" src="images/Coffee/14.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--* //////////////////////// -->
+                        <div class="my-5">
+                            <div class="book">
+                                <h1 class="uppercase font-bold text-red-900 text-2xl mb-5 break-keep w-25 text-center">
+                                    cream latte
+                                </h1>
+                                <!-- <h1 class=" uppercase font-bold text-red-900 text-3xl ps-[10px]"></h1> -->
+                                <p class="px-10 text-gray-500 dark:text-gray-500 mt-2 text-sm leading-6 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.
+                                </p>
+                                <h3 class="uppercase font-bold text-red-900 text-2xl mt-5">
+                                    ₹ COST
+                                </h3>
+                                <div class="cover overflow-hidden ">
+                                    <img class="size-75" src="images/Coffee/2.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--* //////////////////////// -->
+                        <div class="my-5">
+                            <div class="book">
+                                <h1 class="uppercase font-bold text-red-900 text-2xl mb-5 break-keep w-25 text-center">
+                                    iced latte
+                                </h1>
+                                <!-- <h1 class=" uppercase font-bold text-red-900 text-3xl ps-[10px]"></h1> -->
+                                <p class="px-10 text-gray-500 dark:text-gray-500 mt-2 text-sm leading-6 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.
+                                </p>
+                                <h3 class="uppercase font-bold text-red-900 text-2xl mt-5">
+                                    ₹ COST
+                                </h3>
+                                <div class="cover overflow-hidden ">
+                                    <img class="size-75" src="images/Coffee/12.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--* //////////////////////// -->
+                        <div class="my-5">
+                            <div class="book">
+                                <h1 class="uppercase font-bold text-red-900 text-2xl mb-5 break-keep w-25 text-center">
+                                    coffee shots
+                                </h1>
+                                <!-- <h1 class=" uppercase font-bold text-red-900 text-3xl ps-[10px]"></h1> -->
+                                <p class="px-10 text-gray-500 dark:text-gray-500 mt-2 text-sm leading-6 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.
+                                </p>
+                                <h3 class="uppercase font-bold text-red-900 text-2xl mt-5">
+                                    ₹ COST
+                                </h3>
+                                <div class="cover overflow-hidden ">
+                                    <img class="size-75" src="images/Coffee/15.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--* //////////////////////// -->
+                        <div class="my-5">
+                            <div class="book">
+                                <h1 class="uppercase font-bold text-red-900 text-2xl mb-5 break-keep w-25 text-center">
+                                    herbal
+                                </h1>
+                                <!-- <h1 class=" uppercase font-bold text-red-900 text-3xl ps-[10px]"></h1> -->
+                                <p class="px-10 text-gray-500 dark:text-gray-500 mt-2 text-sm leading-6 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.
+                                </p>
+                                <h3 class="uppercase font-bold text-red-900 text-2xl mt-5">
+                                    ₹ COST
+                                </h3>
+                                <div class="cover overflow-hidden ">
+                                    <img class="size-75" src="images/Coffee/16.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--* //////////////////////// -->
+                        <div class="my-5">
+                            <div class="book">
+                                <h1 class="uppercase font-bold text-red-900 text-2xl mb-5 break-keep w-25 text-center">
+                                    herbal cherry
+                                </h1>
+                                <!-- <h1 class=" uppercase font-bold text-red-900 text-3xl ps-[10px]"></h1> -->
+                                <p class="px-10 text-gray-500 dark:text-gray-500 mt-2 text-sm leading-6 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.
+                                </p>
+                                <h3 class="uppercase font-bold text-red-900 text-2xl mt-5">
+                                    ₹ COST
+                                </h3>
+                                <div class="cover overflow-hidden ">
+                                    <img class="size-75" src="images/Coffee/17.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--* //////////////////////// -->
+                        <div class="my-5">
+                            <div class="book">
+                                <h1 class="uppercase font-bold text-red-900 text-2xl mb-5 break-keep w-25 text-center">
+                                    filtered coffee
+                                </h1>
+                                <!-- <h1 class=" uppercase font-bold text-red-900 text-3xl ps-[10px]"></h1> -->
+                                <p class="px-10 text-gray-500 dark:text-gray-500 mt-2 text-sm leading-6 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.
+                                </p>
+                                <h3 class="uppercase font-bold text-red-900 text-2xl mt-5">
+                                    ₹ COST
+                                </h3>
+                                <div class="cover overflow-hidden ">
+                                    <img class="size-75" src="images/Coffee/18.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ? end hot drinks -->
+                <!-- ? Start snacks -->
+                <div id="snacks-menu" class="hidden snacks-menu px-10">
+                    <div class="
+                     grid md:grid-cols-3 lg:grid-cols-4 justify-center items-center">
+                        <!--* //////////////////////// -->
+                        <div class="my-5">
+                            <div class="book">
+                                <h1 class="uppercase font-bold text-red-900 text-2xl mb-5 break-keep w-25 text-center">
+                                    pizza
+                                </h1>
+                                <!-- <h1 class=" uppercase font-bold text-red-900 text-3xl ps-[10px]"></h1> -->
+                                <p class="px-10 text-gray-500 dark:text-gray-500 mt-2 text-sm leading-6 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.
+                                </p>
+                                <h3 class="uppercase font-bold text-red-900 text-2xl mt-5">
+                                    ₹ COST
+                                </h3>
+                                <div class="cover overflow-hidden ">
+                                    <img class="size-75" src="images/Coffee/29.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--* //////////////////////// -->
+                        <div class="my-5">
+                            <div class="book">
+                                <h1 class="uppercase font-bold text-red-900 text-2xl mb-5 break-keep w-25 text-center">
+                                    fries
+
+                                </h1>
+                                <!-- <h1 class=" uppercase font-bold text-red-900 text-3xl ps-[10px]"></h1> -->
+                                <p class="px-10 text-gray-500 dark:text-gray-500 mt-2 text-sm leading-6 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.
+                                </p>
+                                <h3 class="uppercase font-bold text-red-900 text-2xl mt-5">
+                                    ₹ COST
+                                </h3>
+                                <div class="cover overflow-hidden ">
+                                    <img class="size-75" src="images/Coffee/21.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--* //////////////////////// -->
+                        <div class="my-5">
+                            <div class="book">
+                                <h1 class="uppercase font-bold text-red-900 text-2xl mb-5 break-keep w-25 text-center">
+                                    burger
+                                </h1>
+                                <!-- <h1 class=" uppercase font-bold text-red-900 text-3xl ps-[10px]"></h1> -->
+                                <p class="px-10 text-gray-500 dark:text-gray-500 mt-2 text-sm leading-6 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.
+                                </p>
+                                <h3 class="uppercase font-bold text-red-900 text-2xl mt-5">
+                                    ₹ COST
+                                </h3>
+                                <div class="cover overflow-hidden ">
+                                    <img class="size-75" src="images/Coffee/22.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--* //////////////////////// -->
+                        <div class="my-5">
+                            <div class="book">
+                                <h1 class="uppercase font-bold text-red-900 text-2xl mb-5 break-keep w-25 text-center">
+                                    sandwich
+                                </h1>
+                                <!-- <h1 class=" uppercase font-bold text-red-900 text-3xl ps-[10px]"></h1> -->
+                                <p class="px-10 text-gray-500 dark:text-gray-500 mt-2 text-sm leading-6 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.
+                                </p>
+                                <h3 class="uppercase font-bold text-red-900 text-2xl mt-5">
+                                    ₹ COST
+                                </h3>
+                                <div class="cover overflow-hidden ">
+                                    <img class="size-75" src="images/Coffee/24.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--* //////////////////////// -->
+                        <div class="my-5">
+                            <div class="book">
+                                <h1 class="uppercase font-bold text-red-900 text-2xl mb-5 break-keep w-25 text-center">
+                                    wth is this ?
+                                </h1>
+                                <!-- <h1 class=" uppercase font-bold text-red-900 text-3xl ps-[10px]"></h1> -->
+                                <p class="px-10 text-gray-500 dark:text-gray-500 mt-2 text-sm leading-6 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.
+                                </p>
+                                <h3 class="uppercase font-bold text-red-900 text-2xl mt-5">
+                                    ₹ COST
+                                </h3>
+                                <div class="cover overflow-hidden ">
+                                    <img class="size-75" src="images/Coffee/25.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--* //////////////////////// -->
+                        <div class="my-5">
+                            <div class="book">
+                                <h1 class="uppercase font-bold text-red-900 text-2xl mb-5 break-keep w-25 text-center">
+                                    waffal
+                                </h1>
+                                <!-- <h1 class=" uppercase font-bold text-red-900 text-3xl ps-[10px]"></h1> -->
+                                <p class="px-10 text-gray-500 dark:text-gray-500 mt-2 text-sm leading-6 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.
+                                </p>
+                                <h3 class="uppercase font-bold text-red-900 text-2xl mt-5">
+                                    ₹ COST
+                                </h3>
+                                <div class="cover overflow-hidden ">
+                                    <img class="size-75" src="images/Coffee/26.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--* //////////////////////// -->
+                        <div class="my-5">
+                            <div class="book">
+                                <h1 class="uppercase font-bold text-red-900 text-2xl mb-5 break-keep w-25 text-center">
+                                    cookies
+                                </h1>
+                                <!-- <h1 class=" uppercase font-bold text-red-900 text-3xl ps-[10px]"></h1> -->
+                                <p class="px-10 text-gray-500 dark:text-gray-500 mt-2 text-sm leading-6 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.
+                                </p>
+                                <h3 class="uppercase font-bold text-red-900 text-2xl mt-5">
+                                    ₹ COST
+                                </h3>
+                                <div class="cover overflow-hidden ">
+                                    <img class="size-75" src="images/Coffee/27.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--* //////////////////////// -->
+                        <div class="my-5">
+                            <div class="book">
+                                <h1 class="uppercase font-bold text-red-900 text-2xl mb-5 break-keep w-25 text-center">
+                                    mix breakfast
+                                </h1>
+                                <!-- <h1 class=" uppercase font-bold text-red-900 text-3xl ps-[10px]"></h1> -->
+                                <p class="px-10 text-gray-500 dark:text-gray-500 mt-2 text-sm leading-6 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.
+                                </p>
+                                <h3 class="uppercase font-bold text-red-900 text-2xl mt-5">
+                                    ₹ COST
+                                </h3>
+                                <div class="cover overflow-hidden">
+                                    <img class="size-75" src="images/Coffee/20.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ? end snacks -->
+                <!-- ~ image && description menu -->
+            </section>
+            <!-- End section menu -->
+            <!--start testImonals && Form -->
+            <div class="px-10 grid md:grid-cols-2 bg-white">
+                <!-- * start  form -->
+                <div class="mt-10 overflow-hidden">
+                    <!-- title -->
+                    <div class="section-title">
+                        <h1 class=" text-red-900 text-4xl font-bold uppercase">your respose</h1>
+                    </div>
+                    <form class="">
+                        <!-- name input -->
+                        <div class="my-10">
+                            <div class="mt-2">
+                                <label for="username" class="block text-sm/6 font-medium text-red-900">Username</label>
+                                <div class="flex items-center bg-white/5 pl-3 border-b-2 border-red-900">
+                                    <input id="username" required type="text" name="username" placeholder="Ahmed Albehy"
+                                        class="block min-w-0 grow  py-1.5 pr-3 pl-1 focus:outline-none sm:text-sm/6 placeholder:text-gray-500" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- city Input -->
+                        <div class="my-10">
+                            <div class="mt-2">
+                                <label for="username" class="block text-sm/6 font-medium text-red-900">City</label>
+                                <div class="flex items-center bg-white/5 pl-3 border-b-2 border-red-900">
+                                    <input id="username" required type="text" name="city" placeholder="City Name"
+                                        class="block min-w-0 grow  py-1.5 pr-3 pl-1 focus:outline-none sm:text-sm/6 placeholder:text-gray-500" />
+                                </div>
+                            </div>
+                            <!-- E-mail input -->
+                            <div class="my-10">
+                                <div class="mt-2">
+                                    <label for="username"
+                                        class="block text-sm/6 font-medium text-red-900">E-Mail</label>
+                                    <div class="flex items-center bg-white/5 pl-3 border-b-2 border-red-900">
+                                        <input id="username" required type="email" name="email"
+                                            placeholder="ahmed@gmail.com"
+                                            class="block min-w-0 grow  py-1.5 pr-3 pl-1 focus:outline-none sm:text-sm/6 placeholder:text-gray-500" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- reviw input -->
+                        <div class="my-10">
+                            <div class="mt-2">
+                                <label for="username" class="block text-sm/6 font-medium text-red-900">Your
+                                    Review</label>
+                                <div class="flex items-center bg-white/5 pl-3 border-2 border-black">
+                                    <textarea id="username" required name="review" placeholder="your Thoughts" rows="4"
+                                        cols="50"
+                                        class="block min-w-0 grow  py-1.5 pr-3 pl-1 focus:outline-none sm:text-sm/6 placeholder:text-gray-500"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- submit Button  -->
+                        <div class="mt-6 flex items-center justify-end gap-x-6">
+                            <button type="submit"
+                                class=" font-bold uppercase border-2 py-2 px-20 mb-10 border-red-900 hover:bg-red-900 hover:text-white  ">submit</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- * end  form -->
+                <!-- *start testImonals   -->
+                <div class="mt-10 md:pl-30 pb-10">
+                    <!-- title -->
+                    <div class="section-title">
+                        <h1 class=" text-red-900 text-4xl font-bold uppercase">testImonal</h1>
+                    </div>
+                    <!--~ slides -->
+                    <div>
+                        <!-- content 1  -->
+                        <div class="slider ">
+                            <div>
+                                <p class="mt-10  text-lg font-semibold ">
+                                    “ Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia,
+                                    there live the blind texts. Separated they live in Bookmarksgrove right at the coast
+                                    of
+                                    the
+                                    Semantics, a large language ocean. ”
+                                </p>
+                                <div class="grid grid-cols-6 justify-end mt-5">
+                                    <h2
+                                        class=" text-red-700  md:col-start-2 col-span-6 md:col-span-4 justify-self-center  md:justify-self-end p-5 text-end text-xl font-bold ">
+                                        Camelia
+                                        Saso
+                                        <hr class="w-50 my-2" />
+                                        <div class="flex gap-4 justify-center">
+                                            <img src="images/svg/facebook-red.svg" alt="" loading="lazy" class="w-5">
+                                            <img src="images/svg/instagram-red.svg" alt="" loading="lazy" class="w-5">
+                                        </div>
+                                    </h2>
+                                    <span class="w-1xs col-span-2  col-start-3 lg:col-span-1 ">
+                                        <img src="images/people/1.jpeg" alt="" class="w-100 rounded-full" />
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="mt-10  text-lg font-semibold ">
+                                    “ Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia,
+                                    there live the blind texts. Separated they live in Bookmarksgrove right at the coast
+                                    of
+                                    the
+                                    Semantics, a large language ocean. ”
+                                </p>
+                                <div class="grid grid-cols-6 mt-5 ">
+                                    <span class="w-1xs col-span-2  col-start-3 lg:col-span-1 ">
+                                        <img src="images/people/5.jpeg" alt="" class="w-100 rounded-full" />
+                                    </span>
+                                    <h2
+                                        class=" text-red-700  col-span-6 md:col-span-4   md:justify-self-start p-5 text-start text-xl font-bold ">
+                                        Seth Doyle
+
+                                        <hr class="w-50 my-2" />
+                                        <div class="flex gap-4 justify-center">
+                                            <img src="images/svg/facebook-red.svg" alt="" loading="lazy" class="w-5">
+                                            <img src="images/svg/instagram-red.svg" alt="" loading="lazy" class="w-5">
+                                        </div>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- content  2-->
+                        <div class="slider hidden ">
+                            <div>
+                                <p class="mt-10  text-lg font-semibold ">
+                                    “ Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia,
+                                    there live the blind texts. Separated they live in Bookmarksgrove right at the coast
+                                    of
+                                    the
+                                    Semantics, a large language ocean. ”
+                                </p>
+                                <div class="grid grid-cols-6 justify-end mt-5">
+                                    <h2
+                                        class=" text-red-700  col-span-6 md:col-span-4   md:justify-self-start p-5 text-start text-xl font-bold ">
+                                        Roberto Webb
+                                        <hr class="w-50 my-2" />
+                                        <div class="flex gap-4 justify-center">
+                                            <img src="images/svg/facebook-red.svg" alt="" loading="lazy" class="w-5">
+                                            <img src="images/svg/instagram-red.svg" alt="" loading="lazy" class="w-5">
+                                        </div>
+                                    </h2>
+                                    <span class="w-1xs col-span-2  col-start-3 lg:col-span-1 ">
+                                        <img src="images/people/2.jpeg" alt="" class="w-100 rounded-full" />
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="mt-10  text-lg font-semibold ">
+                                    “ Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia,
+                                    there live the blind texts. Separated they live in Bookmarksgrove right at the coast
+                                    of
+                                    the
+                                    Semantics, a large language ocean. ”
+                                </p>
+                                <div class="grid grid-cols-6 mt-5 ">
+                                    <span class="w-1xs col-span-2  col-start-3 lg:col-span-1 ">
+                                        <img src="images/people/4.jpeg" alt="" class="w-100 rounded-full" />
+                                    </span>
+                                    <h2
+                                        class=" text-red-700  col-span-6 md:col-span-4   md:justify-self-start p-5 text-start text-xl font-bold ">
+                                        Midas Hofsatra
+                                        <hr class="w-50 my-2" />
+                                        <div class="flex gap-4 justify-center">
+                                            <img src="images/svg/facebook-red.svg" alt="" loading="lazy" class="w-5">
+                                            <img src="images/svg/instagram-red.svg" alt="" loading="lazy" class="w-5">
+                                        </div>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- content 3  -->
+                        <div class="slider hidden">
+                            <div>
+                                <p class="mt-10  text-lg font-semibold ">
+                                    “ Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia,
+                                    there live the blind texts. Separated they live in Bookmarksgrove right at the coast
+                                    of
+                                    the
+                                    Semantics, a large language ocean. ”
+                                </p>
+                                <div class="grid grid-cols-6 justify-end mt-5">
+                                    <h2
+                                        class=" text-red-700  col-span-6 md:col-span-4   md:justify-self-start p-5 text-start text-xl font-bold ">
+                                        Mellisa Howard
+                                        <hr class="w-50 my-2" />
+                                        <div class="flex gap-4 justify-center">
+                                            <img src="images/svg/facebook-red.svg" alt="" loading="lazy" class="w-5">
+                                            <img src="images/svg/instagram-red.svg" alt="" loading="lazy" class="w-5">
+                                        </div>
+                                    </h2>
+                                    <span class="w-1xs col-span-2  col-start-3 lg:col-span-1 ">
+                                        <img src="images/people/3.jpeg" alt="" class="w-100 rounded-full" />
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="mt-10  text-lg font-semibold ">
+                                    “ Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia,
+                                    there live the blind texts. Separated they live in Bookmarksgrove right at the coast
+                                    of
+                                    the
+                                    Semantics, a large language ocean. ”
+                                </p>
+                                <div class="grid grid-cols-6 mt-5 ">
+                                    <span class="w-1xs col-span-2  col-start-3 lg:col-span-1 ">
+                                        <img src="images/people/7.jpeg" alt="" class="w-100 rounded-full" />
+                                    </span>
+                                    <h2
+                                        class=" text-red-700  col-span-6 md:col-span-4   md:justify-self-start p-5 text-start text-xl font-bold ">
+                                        DeMorris Byrd
+                                        <hr class="w-50 my-2" />
+                                        <div class="flex gap-4 justify-center">
+                                            <img src="images/svg/facebook-red.svg" alt="" loading="lazy" class="w-5">
+                                            <img src="images/svg/instagram-red.svg" alt="" loading="lazy" class="w-5">
+                                        </div>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-dots  flex justify-center">
+                            <span class="dot active h-[0.8rem] w-[0.8rem]  mx-2">
+                            </span>
+                            <span class="dot h-[0.8rem] w-[0.8rem]  mx-2">
+                            </span>
+                            <span class="dot h-[0.8rem] w-[0.8rem]  mx-2">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- *end testImonals   -->
+                <!-- testImonals && Form -->
+            </div>
+            <!--end testImonals && Form -->
+            <!-- Location section Title -->
+            <div class="py-15 section-title">
+                <h1 class="text-4xl text-red-800 font-bold text-center mt-5">contact</h1>
+                <h2 class="text-6xl text-white font-bold text-center">Find Us</h2>
+            </div>
+            <!-- start location section -->
+            <section id="contact" class="location bg-white px-10 py-5">
+                <div class="grid md:grid-cols-2 gap-10 ">
+                    <div class="relative w-full overflow-hidden rounded-xl" style="padding-top: 56.25%;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d768659.386827687!2d32.67801390068228!3d29.995460421880406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145822c33110ea81%3A0x7e5b7bc6b64f8dfe!2sPrincess%20Caf%C3%A9%20%26%20Restaurant!5e1!3m2!1sar!2seg!4v1779655671764!5m2!1sar!2seg"
+                            class="absolute top-0 left-0 w-full h-full" frameborder="0" width="600" height="450"
+                            allowfullscreen="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!-- <iframe src="" frameborder="0"
+                            allowfullscreen></iframe> -->
+                    </div>
+                    <div class="overflow-hidden">
+                        <div
+                            class="open-time  rounded-xl w-full h-full py-30 flex flex-col gap-10 items-center justify-center">
+                            <h1 class="text-3xl text-red-800 font-bold text-center ">Opening Hours</h1>
+                            <h2 class="text-2xl text-white font-bold text-center">Mon - Fri: 8:00AM - 9:00PM</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <footer class="bg-white px-10 py-5">
+                <div class="gap-5 flex justify-center">
+                    <span>
+                        <img class="w-10 hover:bg-red-800  transition delay-150 duration-300 ease-in-out rounded-xl "
+                            src="images/svg/facebook.svg" alt="">
+                    </span>
+                    <span>
+                        <img class="w-10 hover:bg-red-800  transition delay-150 duration-300 ease-in-out rounded-xl "
+                            src="images/svg//instagram.svg" alt="">
+                    </span>
+                    <span>
+                        <img class="w-10 hover:bg-red-800  transition delay-150 duration-300 ease-in-out rounded-xl "
+                            src="images/svg/google.svg" alt="">
+                    </span>
+                    <span>
+                        <img class="w-10 hover:bg-red-800  transition delay-150 duration-300 ease-in-out rounded-xl "
+                            src="images/svg/linkedin.svg" alt="">
+                    </span>
+                    <span>
+                        <img class="w-10 hover:bg-red-800  transition delay-150 duration-300 ease-in-out rounded-xl "
+                            src="images/svg/whatsapp.svg" alt="">
+                    </span>
+                </div>
+                <p class="text-center pt-3 text-gray-600/75 dark:text-gray-600/75">Copyright &copy; 2026 All rights
+                    reserved</p>
+            </footer>
+            <!-- end location section -->
+        </div>
+        <!-- ? End menu area -->
+    </main>
+    <script type="module" src="JS/main.js"></script>
+</body>
+</html>
